@@ -16,6 +16,10 @@ input {
   outline: none;
 }
 
+input::placeholder {
+  color: #000;
+}
+
 input:hover {
   border-color: #000;
 }
@@ -24,12 +28,20 @@ input:active {
   border-color: #4e75ff;
 }
 
+input:disabled {
+  border-color: #808080;
+}
+
+input:disabled::placeholder {
+  color: #808080;
+}
+
 button {
   margin-left: 8px;
   color: #fff;
   padding: 6px 15px;
   background: #4e75ff;
-  outline: none;
+  outline: auto;
   border-radius: 8px;
   font-family: Montserrat;
   font-size: 16px;
@@ -42,6 +54,37 @@ button:hover {
   background-color: #6c8cff;
 }
 
+button:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+}
+
 .flatpickr-monthDropdown-months {
   font-family: Montserrat;
+}
+
+.timer {
+  margin-top: 32px;
+  display: flex;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  color: #2e2f42;
+  margin-right: 24px;
+}
+
+.value {
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 1.6px;
+  margin: 0 auto;
+}
+
+.label {
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin: 0 auto;
 }
