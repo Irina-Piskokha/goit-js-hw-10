@@ -57,6 +57,7 @@ button:hover {
 button:disabled {
   background-color: #cfcfcf;
   color: #989898;
+  outline: none;
 }
 
 .flatpickr-monthDropdown-months {
