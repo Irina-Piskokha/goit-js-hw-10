@@ -15,12 +15,21 @@ body {
 }
 
 .input-delay {
-  width: 355px;
-  height: 30px;
+  width: 326px;
+  height: 22px;
   margin-top: 8px;
   border-radius: 4px;
   border: 1px solid #808080;
   outline: none;
+  padding: 8px 16px;
+}
+
+.input-delay:hover {
+  border-color: #000;
+}
+
+.input-delay:active {
+  border-color: #4e75ff;
 }
 
 fieldset {
@@ -48,4 +57,8 @@ button {
   background: #4e75ff;
   outline: auto;
   padding: 8px 99px;
+}
+
+button:hover {
+  background: #6c8cff;
 }

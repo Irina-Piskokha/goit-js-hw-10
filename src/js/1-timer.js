@@ -23,7 +23,6 @@ const options = {
     const currentDate = new Date();
     const delta = selectedDates[0] - currentDate;
     if (delta <= 0) {
-      // window.alert('Please choose a date in the future');
       iziToast.error({
         title: 'Error',
         message: 'Please choose a date in the future',
