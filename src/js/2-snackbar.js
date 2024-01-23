@@ -10,7 +10,7 @@ refs.form.addEventListener('submit', onSubmitForm);
 function onSubmitForm(evt) {
   evt.preventDefault();
 
-  const delay = evt.currentTarget.elements.delay.value;
+  const delay = +evt.currentTarget.elements.delay.value;
   const state = evt.currentTarget.elements.state.value;
 
   createPromise(state, delay)
@@ -35,7 +35,6 @@ function onSubmitForm(evt) {
 }
 
 function createPromise(state, delay) {
-  // const result;
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       if (state === 'fulfilled') {

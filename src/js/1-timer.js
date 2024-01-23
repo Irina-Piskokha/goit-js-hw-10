@@ -45,7 +45,7 @@ flatpickr(refs.dateTimePicker, options);
 refs.btnStart.addEventListener('click', onButtonClick);
 
 function onButtonClick() {
-  const intervalId = setInterval(() => {
+  intervalId = setInterval(() => {
     let currentDate = new Date();
     const ms = userSelectedDate - currentDate;
     if (ms <= 0) {
@@ -54,6 +54,7 @@ function onButtonClick() {
     }
 
     refs.btnStart.setAttribute('disabled', '');
+    refs.dateTimePicker.setAttribute('disabled', '');
     const date = convertMs(ms);
     updateTextContent(date);
   }, 1000);
